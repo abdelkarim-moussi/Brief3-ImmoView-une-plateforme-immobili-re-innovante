@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Témoignages des clients IMMOVIEW">
+    <title>IMMOVIEW | Témoignages</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="hero-image">
+            <img src="assets/image2.jpg" alt="Image d'accueil IMMOVIEW" class="header-image">
+        </div>
+    </header>
+
+    <main>
+        <section class="temoignages">
+            <h1>Nos témoignages clients</h1>
+            
+            <div class="temoignages-grid">
+                <article class="temoignage-card">
+                    <img src="assets/Image_01.jpg" alt="Photo du client 1">
+                    <div class="temoignage-info">
+                        <h2>Jean Dupont</h2>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="commentaire">Un service exceptionnel, je recommande vivement !</p>
+                </article>
+        
+                <article class="temoignage-card">
+                    <img src="assets/Image_02.jpg" alt="Photo du client 2">
+                    <div class="temoignage-info">
+                        <h2>Marie Martin</h2>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="commentaire">Équipe professionnelle et à l'écoute.</p>
+                </article>
+        
+                <article class="temoignage-card">
+                    <img src="assets/Image_03.jpg" alt="Photo du client 3">
+                    <div class="temoignage-info">
+                        <h2>Pierre Durand</h2>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="commentaire">Transaction rapide et efficace.</p>
+                </article>
+        
+                <article class="temoignage-card">
+                    <img src="assets/Image_04.jpg" alt="Photo du client 4">
+                    <div class="temoignage-info">
+                        <h2>Sophie Bernard</h2>
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="commentaire">Très satisfaite de mon expérience.</p>
+                </article>
+            </div>
+        </section>        
+
+        <section class="ajout-temoignage">
+            <div>
+                <h2>Partagez votre expérience</h2>
+                <p>Partager votre expérience personnelle après avoir utilisé nos produits nous aide à développer et à améliorer nos produits, et aide également les clients à connaître la qualité de nos services.</p>
+            </div>
+            <div>
+                <form class="temoignage-form" action="/submit-temoignage" method="POST">
+                    <div class="form-group">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Entrez votre nom">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Votre email</label>
+                        <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="commentaire">Votre témoignage</label>
+                        <textarea id="commentaire" name="commentaire" required placeholder="Partagez votre expérience avec nous"></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn-submit" onclick="">Envoyer mon témoignage</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 IMMOVIEW - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
