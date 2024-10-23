@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #17372b;
+  --secondary-color: #1aad76;
+  --green-1: #48674f;
+  --green-2: #adbc9d;
+}
+.padding{
+  padding: 50px 40px;
+}
+/*section title*/
+.section-title{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/*end section title*/
+header {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(var(--green-2), rgba(72, 103, 79, 0.3)),
+    url("../imgs/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index : 99;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  list-style: none;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+li:last-child a{
+  color: #fff;
+}
+.primary-button{
+  outline: none;
+  background-color: var(--primary-color);
+  padding: 10px 32px;
+  border : none;
+  border-radius: 40px;
+  transition: all .5s ease-in-out;
+  cursor: pointer;
+}
+.primary-button:hover{
+  background-color: var(--secondary-color);
+}
+.primary-button a{
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.logo {
+  width: 75px;
+  height: 58px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 20px;
+
+  position: relative;
+  top: 35vh;
+}
+
+.hero-title{
+  font-size: 4rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 4.3rem;
+  max-width : 500px
+}
+.hero-paragraph{
+  font-size: 1rem;
+  color: #fff;
+  line-height : 1.4rem;
+  max-width : 450px;
+  margin : 10px auto;
+}
+
+/*Mession*/
+
+.mession{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
