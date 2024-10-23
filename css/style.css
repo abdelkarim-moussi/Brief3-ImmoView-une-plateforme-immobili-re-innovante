@@ -34,142 +34,115 @@ main {
 }
 
 /* Section des témoignages */
-.temoignages {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.temoignages h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-}
-
-.temoignages-grid {
+/* Card style */
+.temoignage-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 0 10px;
+    grid-template-rows: repeat(100em, minmax());
+}
+.temoignage {
+    background-color: #17372B;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 300px;
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .temoignage-card {
-    background: white;
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(173, 188, 157, 0.2);
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 20em;
 }
 
 .temoignage-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(173, 188, 157, 0.9);
+    transform: scale(1.2);
+    border-radius: 10px;
+    transition: 1s;
 }
-
-/* Styles pour l'image circulaire et alignement */
-.temoignage-card img {
-    width: 70px; /* Ajustez la taille comme nécessaire */
-    height: 70px; /* Ajustez la taille comme nécessaire */
-    border-radius: 50%; /* Rend l'image circulaire */
-    margin-bottom: 10px; /* Espace entre l'image et le texte */
-    display: block; /* Assure que l'image s'affiche comme un bloc */
-    margin-left: auto;
-    margin-right: auto; /* Centre l'image */
-}
-
 .temoignage-info {
+    margin-left: 1em;
+}
+
+.temoignage-info h2 {
+    color: #17372B;
+}
+.photo_utilisatuer {
+    border-radius: 50%;
+    width: 6em;
+    height: auto;
+}
+
+.rating {
+    margin-top: 0;
+    color: yellow;
+}
+.photo_info {
+    display: flex;
+    
+}
+.commentaire {
+    color: white;
+    width: 20em;
+    font-style: italic;
+    font-weight: 900;
+}
+.card {
+    align-items: center;
+    width: 18em;
+    height: auto;
+}
+
+
+/* Formulaire  et ajouter un commentaire*/
+.ajout-temoignage {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 10px; /* Espace entre l'image et les informations */
+    width: 100%;
+    height: auto;
 }
 
-.rating .stars {
-    color: #ffcc00;
-    margin-left: 5px; /* Espace entre le nom et les étoiles */
+.motivation {
+    width: 50vw;
+    height: auto;
 }
 
-/* Section pour ajouter un témoignage */
-.ajout-temoignage {
-    background: #fff;
+.temoignage-form {
+    display: grid;
+    width: 50vw;
+    height: auto;
+    padding: 0.25em;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-    transition: transform 0.3s ease;
+
 }
 
-.ajout-temoignage:hover {
-    transform: translateY(-2px);
-}
-
-.ajout-temoignage h2 {
-    margin-bottom: 10px; /* Ajustez cette valeur pour l'alignement */
-}
-
-.ajout-temoignage p {
-    margin-bottom: 20px; /* Ajustez pour l'alignement */
-}
-
-/* Égaliser l'espace entre les éléments dans les témoignages */
-.temoignage-card h2 {
-    margin-bottom: 10px; /* Espace entre le nom et le commentaire */
-}
-
-.temoignage-card p {
-    margin-bottom: 20px; /* Ajustez pour égaliser avec le formulaire */
-}
-
-/* Formulaire */
 .form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+    display: grid;
+    font-weight: 700;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 10px;
 }
 
 input[type="text"],
 input[type="email"],
-textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #007bff;
-    outline: none;
+textarea,
+.btn-submit{
+    border: 0.5pt solid rgba(173, 188, 157, 0.9);
+    border-radius: 10px;
+    resize: vertical;
 }
 
 .btn-submit {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color:white;
+    color: rgb(23, 55, 43);
 }
 
 .btn-submit:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #007bff;
-    color: white;
-    margin-top: 40px;
-}
-
-footer p {
-    margin: 0;
+    color:white;
+    background-color: rgb(23, 55, 43);
+    transform: scale(2);
+    transition: 0.5s;
 }

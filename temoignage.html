@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conent="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Témoignages des clients IMMOVIEW">
+    <title>IMMOVIEW | Témoignages</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/imgs/ImmoView-logo.png" alt="ImmoView">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="temoignage.html">Temoignage</a></li>
+                <li>
+                  <button type="button" class="primary-button"><a href="#">Contact</a></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="temoignages">
+            <h1>Nos témoignages clients</h1>
+            
+            <div class="temoignages-grid">
+                <article class="temoignage-card">
+                    <div class="card">
+                        <div class="photo_info">
+                            <div><img class="photo_utilisatuer" src="assets/Image_01.jpg" alt="Photo du client 1"></div>
+                            <div class="temoignage-info">
+                                <h2>Jean Dupont</h2>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <q class="commentaire">Un service exceptionnel, je recommande vivement !</q>
+                        </div>
+                    </div>
+                </article>
+        
+                <article class="temoignage-card">
+                    <div class="card">
+                        <div class="photo_info">
+                            <div><img class="photo_utilisatuer" src="assets/Image_02.jpg" alt="Photo du client 2"></div>
+                            <div class="temoignage-info">
+                                <h2>Jean Dupont</h2>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <q class="commentaire">Équipe professionnelle et à l'écoute.</q>
+                        </div>
+                    </div>
+                </article>
+        
+                <article class="temoignage-card">
+                    <div class="card">
+                        <div class="photo_info">
+                            <div><img class="photo_utilisatuer" src="assets/Image_03.jpg" alt="Photo du client 3"></div>
+                            <div class="temoignage-info">
+                                <h2>Jean Dupont</h2>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <q class="commentaire">Transaction rapide et efficace.</q>
+                        </div>
+                    </div>
+                </article>
+        
+                <article class="temoignage-card">
+                    <div class="card">
+                        <div class="photo_info">
+                            <div><img class="photo_utilisatuer" src="assets/Image_04.jpg" alt="Photo du client 4"></div>
+                            <div class="temoignage-info">
+                                <h2>Jean Dupont</h2>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <q class="commentaire">Très satisfaite de mon expérience.</q>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>        
+
+        <section class="ajout-temoignage">
+            <div class="motivation">
+                <h2>Partagez votre expérience</h2>
+                <p>Partager votre expérience personnelle après avoir utilisé nos produits nous aide à développer et à améliorer nos produits, et aide également les clients à connaître la qualité de nos services.</p>
+            </div>
+            <div class="formulaire">
+                <form class="temoignage-form" action="/submit-temoignage" method="POST">
+                    <div class="form-group">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" id="nom" name="nom" required placeholder="Entrez votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Votre email</label>
+                        <input type="email" id="email" name="email" required placeholder="Entrez votre email">
+                    </div>
+                    <div class="form-group">
+                        <label for="commentaire">Votre témoignage</label>
+                        <textarea id="commentaire" name="commentaire" required placeholder="Partagez votre expérience avec nous"></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
