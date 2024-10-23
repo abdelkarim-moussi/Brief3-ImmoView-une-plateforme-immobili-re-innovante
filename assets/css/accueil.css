@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #17372b;
+  --secondary-color: #1aad76;
+  --green-1: #48674f;
+  --green-2: #adbc9d;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(var(--green-2), rgba(0, 0, 0, 0.5)),
+    url("./assets/imgs/bg1.jpg");
+  height: 100vh;
+  width: 100vw;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+.nav-menu {
+  display: flex;
+}
+
+.logo {
+  width: 75px;
+  height: 58px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
