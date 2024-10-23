@@ -1,89 +1,49 @@
-.body{
-    margin: 0%;
-    font-family: Arial, sans-serif;
 
-}
 
-.first_part {
-    background: linear-gradient(180deg, #ADBC9D,rgba(0,0,0,0.5)), url(./images/pexels-scottwebb-1029599\ \(1\).jpg);
+.catalogue-header {
+    background: linear-gradient(180deg, #ADBC9D,rgba(0,0,0,0.5)), url(./assetS/imgs/catalogue-bg.jpg);
     background-size: cover;
     height: 100vh;
 }
 
-.container_first_part{
+/* .container_first_part{
     width: 75%;
     margin: auto;
     height: 90px;
-    position: relative;
-}
-header {
-   
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-   
-}
+} */
 .logo {
     font-size: 1.5rem;
     display: flex;
     align-items: center;
 }
 
-.logo img {
-    height: 80px;
-    margin-right: 20px;
-}
 
-nav ul {
-    list-style: none;
-    margin: 10px;
-    padding: 0;
-    display: flex;
-    gap: 40px;
+.catalogue-hero_content{
+    position: relative;
+    top: 30vh;
 }
-
-nav ul li a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 10px 20px;
-}
-
-nav ul li a:hover {
-    background-color: #17372B;
-    padding: 5px 10px;
-    border-radius: 20px;
-    padding: 10px 20px;
-}
-
-.Contact-btn {
-    padding: 10px 20px;
-    border: 2px solid white;
-    background: transparent;
-    color: white;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.Contact-btn:hover {
-    background-color: white;
-    color: #7209b7;
-}
-.title h1 {
+.catalogue-hero_content h1 {
     text-align: center;
     color: aliceblue;
-    font-size: 90px;
+    font-size: 6rem;
     
 }
-.title p {
-    margin-top: -60px;
+.catalogue-hero_content p {
+    margin-top: 20px;
     text-align: center;
     color: aliceblue;
-    font-size: 30px;
+    font-size: 2rem;
 }
+/* .button {
+    width: 100%;
+    padding-top: 10%;
+    margin-top: 30px;
+    justify-content: space-between;
+    border-radius: 100%;
+    flex-direction: row;
+    
+
+} */ 
 
 
 
