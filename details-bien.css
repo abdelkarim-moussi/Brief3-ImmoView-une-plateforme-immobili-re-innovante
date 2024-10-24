@@ -347,8 +347,9 @@ footer .newsletter .submit-btn input[type="submit"]:hover {
 .copyright{
     display: flex;
     width: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     justify-content: center;
+    border-top: solid 1px #fff;
 }
 
 .copyright h4{
@@ -356,6 +357,26 @@ footer .newsletter .submit-btn input[type="submit"]:hover {
     color: #fff;
     text-align: center;
     font-weight: normal;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    main{
+        margin: auto 2vw;
+    }
+    main .main-contain .image-section{
+        width: 50vw;
+    }
+    main .more-info{
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+    .similar-offer{
+        width: 100%;
+        margin: auto;
+    }
+    
+
 }
 
 
