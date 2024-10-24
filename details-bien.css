@@ -227,9 +227,6 @@ main .more-info .message-section .text-area input[type="submit"]:hover{
 }
 
 .similar-offer .offer-box .offer-card:hover{
-    padding: 1%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px #000; 
     opacity: 1;
     scale: 1.02;
 }
@@ -264,6 +261,104 @@ main .more-info .message-section .text-area input[type="submit"]:hover{
     font-size: 0.9rem;
     color: #1AAD76;
 }
+
+/* Footer */
+
+footer{
+    display: flex;
+    background-color: var(--secondary-color);
+    color: #fff;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 2%;
+    height: 50vh;
+
+}
+
+footer .about{
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+    margin-top: 5%;
+}
+
+footer .about img{
+    height: 12vh;
+    width: 8vw;
+    margin-left: 3vw;
+}
+
+footer .about .social-media a{
+    font-size: 3rem;
+    margin-right: 2vw;
+    color: #fff;
+    transition: 0.3s;
+}
+
+footer .about .social-media a:hover{
+    color: #1AAD76;
+}
+
+footer .links{
+    margin-top: 5%;
+    display: flex;
+    flex-direction:column;
+    margin-left: 3vw;
+}
+
+footer .links a , h3{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .newsletter{
+    margin-top: 5%;
+    display: flex;
+    flex-direction:column;
+}
+
+footer .newsletter .submit-btn input[type="email"]{
+    height: 6vh;
+    width: 20vw;
+    border: none;
+    border-radius: 25px;
+    padding: 1vh 1vw;
+    outline: none;
+}
+
+footer .newsletter .submit-btn input[type="submit"] {
+    height: 6vh;
+    width: 8vw;
+    border: none;
+    border-radius: 25px;
+    padding: 1vh 1vw;
+    outline: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    margin-left: -9vw;
+    transition: 0.5s ease;
+}
+
+footer .newsletter .submit-btn input[type="submit"]:hover {
+    background-color: #1AAD76;
+    scale: 1.03;
+}
+
+.copyright{
+    display: flex;
+    width: 100%;
+    background-color: var(--secondary-color);
+    justify-content: center;
+}
+
+.copyright h4{
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+}
+
+
 
 
 

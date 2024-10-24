@@ -100,6 +100,7 @@
             </div>
         </section>
     </main>
+    
     <section class="similar-offer">
         <h2>Offres Similaires</h2>
         <div class="offer-box">
@@ -137,6 +138,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="about">
             <img src="images/white-logo.png" alt="ImmoView">
@@ -147,28 +149,33 @@
                 odio saepe?
             </p>
             <div class="social-media">
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-square-x-twitter"></i>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
             </div>
         </div>
         <div class="links">
             <h3>Liens Rapides</h3>
-            <h4><a href="#">Accueil</a></h4>
-            <h4><a href="#">Catalogue</a></h4>
-            <h4><a href="#">Temoignage</a></h4>
+            <span><a href="#">Accueil</a></span>
+            <span><a href="#">Catalogue</a></span>
+            <span><a href="#">Temoignage</a></span>
         </div>
         <div class="newsletter">
             <h3>S'abonner</h3>
             <p>Abonnez-vous dès maintenant pour ne rien manquer !</p>
             <div class="submit-btn">
-                <input type="email" placeholder="Entrez votre Adresse Email">
-                <input type="submit">
-
+                <form id="newsletter" action="">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Entrez votre Adresse Email" required>
+                    <label for="submit"></label>
+                    <input type="submit" id="submit" form="newsletter">
+                </form>
             </div>
         </div>
-
     </footer>
+    <div class="copyright">
+        <h4>Copyright©2024 - Reformed Plasma</h4>
+    </div>
 </body>
 <script src="https://kit.fontawesome.com/8dd174d5fa.js" crossorigin="anonymous"></script>
 </html>
