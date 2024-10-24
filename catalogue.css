@@ -82,6 +82,11 @@ body{
     height: auto;
     border-radius: 5px;
 }
+.icons {
+    display: flex;
+    width: 10%;
+    height: 10px;
+}
 
 
 
@@ -126,19 +131,6 @@ body{
 .catalogue-card button{
     width: 150px;
 }
-/* .dot {
-    display: flex;
-    height: 30px;
-    width: 30px;
-    background-color: #ADBC9D;
-    border-radius: 50%;
-    
-  }
-  
-.middle {
-    background-color: #48674F; 
-} */
-
 .container11{
     display: flex;
 }
@@ -160,4 +152,8 @@ body{
     margin: 0 20px;
 
 } 
+.catalogue :hover{
+    transform: scale(1.1);
+
+}
 
