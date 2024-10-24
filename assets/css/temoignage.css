@@ -24,6 +24,16 @@ body {
   padding: 50px 40px;
 }
 
+/*pages hero section but Accueil*/
+.page-head {
+  height: 70vh;
+  background: linear-gradient(var(--green-2), rgba(72, 103, 79, 0.5)),
+    url("../imgs/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/*-------------------------------*/
+
 /*section title*/
 .section-title {
   font-size: 1.1rem;
@@ -39,108 +49,6 @@ body {
 }
 
 /*end section title*/
-header {
-  display: flex;
-  flex-direction: column;
-  background: linear-gradient(var(--green-2), rgba(72, 103, 79, 0.1)),
-    url("/assets/bg2.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 50px;
-  background-color: #fff;
-  position: fixed;
-  width: 100%;
-  z-index: 99;
-  box-shadow: 2px 1 10 #000;
-}
-
-.nav-menu {
-  display: flex;
-  align-items: center;
-  column-gap: 40px;
-  list-style: none;
-}
-
-.nav-menu li a {
-  text-decoration: none;
-  color: #000;
-  font-size: 1rem;
-  letter-spacing: 1px;
-}
-
-li:last-child a {
-  color: #fff;
-}
-
-.primary-button {
-  outline: none;
-  background-color: var(--primary-color);
-  padding: 10px 32px;
-  border: none;
-  border-radius: 40px;
-  transition: all 0.5s ease-in-out;
-  cursor: pointer;
-}
-
-.primary-button:hover {
-  background-color: var(--secondary-color);
-}
-
-.primary-button a {
-  color: #fff;
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
-
-.logo {
-  width: 75px;
-  height: 58px;
-}
-
-.logo img {
-  width: 100%;
-  height: 100%;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  row-gap: 20px;
-
-  position: relative;
-  top: 35vh;
-}
-
-.hero-title {
-  font-size: 4rem;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #fff;
-  line-height: 4.3rem;
-  max-width: 500px;
-}
-
-.hero-paragraph {
-  font-size: 1rem;
-  color: #fff;
-  line-height: 1.4rem;
-  max-width: 450px;
-  margin: 10px auto;
-}
 
 /* Grille de témoignages */
 .temoignages {
@@ -149,10 +57,8 @@ li:last-child a {
   padding: 2rem;
 }
 
-.temoignages h1 {
-  text-align: start;
-  margin-bottom: 3rem;
-  color: #17372B;
+.temoignages > h3 {
+  margin-bottom: 40px;
 }
 
 .temoignages-grid {
@@ -198,33 +104,40 @@ li:last-child a {
   width: 100%;
   margin: 0;
 }
-.motivation p {
-  line-height: 1.5px;
+.motivation > h2 {
+  margin-bottom: 20px;
+}
+.motivation > p {
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 .temoignage-form {
   width: 100%;
-  max-width: 600px;
+  max-width: 550px;
   margin-left: 20%;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
-input[type="text"],
-input[type="email"],
+#nom,
+#email,
 textarea {
   width: 100%;
   max-width: 100%;
-  height: 7vh;
   border: 0.5px solid rgba(0, 0, 0, 20%);
-  border-radius: 10px;
-  padding-left: 2em;
-  margin-bottom: 0.3em;
+  border-radius: 40px;
+  padding: 13px 20px;
+  outline: none;
 }
-
 textarea {
-  resize: vertical;
+  height: 130px;
+}
+.temoignage-form button {
+  color: #fff;
 }
 
-button[type="submit"] {
+/* button[type="submit"] {
   color: white;
   background-color: var(--primary-color);
   font-weight: bold;
@@ -232,7 +145,7 @@ button[type="submit"] {
   max-width: 100%;
   height: 5vh;
   border-radius: 50px;
-}
+} */
 
 /* Nos services */
 .services-section {
@@ -264,7 +177,7 @@ button[type="submit"] {
 }
 
 .services-card:hover {
-  transform: scale(1.3);
+  transform: scale(1);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
@@ -301,122 +214,8 @@ button[type="submit"] {
   line-height: 1.5;
 }
 
-/*footer*/
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--primary-color);
-  color: #fff;
-  row-gap: 30px;
-  padding: 50px 40px 30px;
-}
-.footer-top {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-/* .footer-left-content{
-  display: flex;
-  flex-direction: column;
-  
-} */
-.footer-logo {
-  width: 75px;
-  height: 58px;
-}
-.footer-logo img {
-  width: 100%;
-  height: 100%;
-}
-.footer-paragraph {
-  font-size: 0.9rem;
-  max-width: 300px;
-  line-height: 1.2rem;
-  margin: 20px auto;
-}
-
-.social-icons {
-  display: flex;
-  gap: 10px;
-}
-.social-icons a img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-
-.footer-titles {
-  font-size: 1.1rem;
-  margin-bottom: 15px;
-  letter-spacing: 1.2px;
-}
-
-.footer-links ul {
-  list-style: none;
-}
-.footer-links ul li {
-  margin-bottom: 10px;
-}
-.footer-links ul li a {
-  font-size: 0.9rem;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-.footer-links ul li a:hover {
-  color: #1aad76;
-}
-
-.inscription-form {
-  background-color: #fff;
-  border-radius: 40px;
-  padding: 6px 13px;
-}
-.inscription-form input {
-  outline: none;
-  border: none;
-}
-.inscription-form input::placeholder {
-  font-size: 0.7rem;
-  color: #9c9797;
-}
-.inscription-button {
-  color: #fff;
-}
-
-.copyright {
-  font-size: 0.7rem;
-}
-.line {
-  width: 50vh;
-  height: 1px;
-  background-color: #9c9797;
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
-
-  /* Navigation mobile */
-  .nav-menu {
-    position: fixed;
-    right: -100%;
-    top: 70px;
-    flex-direction: column;
-    background-color: white;
-    width: 100%;
-    padding: 2rem;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-
   /* Ajustement grille */
   .temoignages-grid {
     grid-template-columns: 1fr;
@@ -424,7 +223,7 @@ footer {
   }
 
   .temoignage-card:hover {
-    transform: scale(1.02);
+    transform: scale(1);
   }
 
   /* Ajustement formulaire */
@@ -450,4 +249,4 @@ footer {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
-
+}
