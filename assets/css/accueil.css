@@ -1,3 +1,341 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Black.ttf");
+}
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+:root {
+  --primary-color: #17372b;
+  --secondary-color: #1aad76;
+  --green-1: #48674f;
+  --green-2: #adbc9d;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.padding {
+  padding: 50px 40px;
+}
+/*section title*/
+.section-title {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.section-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+/*end section title*/
+header {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(var(--green-2), rgba(72, 103, 79, 0.3)),
+    url("../imgs/bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 2px 1 10 #000;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  list-style: none;
+}
+.nav-menu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+li:last-child a {
+  color: #fff;
+}
+.primary-button {
+  outline: none;
+  background-color: var(--primary-color);
+  padding: 10px 32px;
+  border: none;
+  border-radius: 40px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+.primary-button:hover {
+  background-color: var(--secondary-color);
+}
+.primary-button a {
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.logo {
+  width: 75px;
+  height: 58px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 20px;
+
+  position: relative;
+  top: 35vh;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  line-height: 4.3rem;
+  max-width: 500px;
+}
+.hero-paragraph {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.4rem;
+  max-width: 450px;
+  margin: 10px auto;
+}
+
+/*Mession*/
+
+.mession {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.mession-content {
+  flex: 1;
+}
+.paragraph {
+  font-size: 1rem;
+  line-height: 1.3rem;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+.mession-image {
+  flex: 1;
+  max-height: 450px;
+}
+.mession-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/*services*/
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 50px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 15px;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+.card-icon {
+  width: 80px;
+  height: 80px;
+}
+.card-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.card-description {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+}
+
+/*FAQ*/
+
+.faq-paragraph {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.question-container {
+  background-color: var(--green-2);
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  /* border-radius: 40px; */
+}
+details {
+  width: 100%;
+  color: #fff;
+}
+.question-number {
+  background-color: var(--green-1);
+  text-align: center;
+  padding: 3px;
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  color: #fff;
+}
+summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+summary img {
+  width: 22px;
+  height: 20px;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.answer {
+  margin-top: 10px;
+  padding-left: 10px;
+  max-width: 500px;
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  row-gap: 30px;
+  padding: 50px 40px 30px;
+}
+.footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+/* .footer-left-content{
+  display: flex;
+  flex-direction: column;
+  
+} */
+.footer-logo {
+  width: 75px;
+  height: 58px;
+}
+.footer-logo img {
+  width: 100%;
+  height: 100%;
+}
+.footer-paragraph {
+  font-size: 0.9rem;
+  max-width: 300px;
+  line-height: 1.2rem;
+  margin: 20px auto;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-titles {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  letter-spacing: 1.2px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+.footer-links ul li a {
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.footer-links ul li a:hover {
+  color: #1aad76;
+}
+
+.inscription-form {
+  background-color: #fff;
+  border-radius: 40px;
+  padding: 6px 13px;
+}
+.inscription-form input {
+  outline: none;
+  border: none;
+}
+.inscription-form input::placeholder {
+  font-size: 0.7rem;
+  color: #9c9797;
+}
+.inscription-button {
+  color: #fff;
+}
+
+.copyright {
+  font-size: 0.7rem;
+}
+.line {
+  width: 50vh;
+  height: 1px;
+  background-color: #9c9797;
 }
