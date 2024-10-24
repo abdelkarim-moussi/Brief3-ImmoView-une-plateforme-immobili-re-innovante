@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_left" />
     <link rel="stylesheet" href="details-bien.css">
+    <!-- <link rel="stylesheet" href="./assets/css/accueil.css"> -->
     <title>Détails du bien</title>
 </head>
 <body>
-    <header></header>
+    <header class="head-section">
+        <nav>
+            <div class="logo">
+              <img src="./assets/imgs/ImmoView-logo.png" alt="ImmoView">
+            </div>
+            <ul class="nav-menu">
+              <li><a href="accueil.html">Accueil</a></li>
+              <li><a href="catalogue.html">Catalogue</a></li>
+              <li><a href="temoignage.html">Temoignage</a></li>
+              <li>
+                <button type="button" class="primary-button"><a href="#">Contact</a></button>
+              </li>
+            </ul>
+          </nav>
+    </header>
     <main>
         <h2>Détails du bien</h2>
         <div class="main-contain">
@@ -60,7 +75,6 @@
             <img src="images/appartement5.jpg" alt="appartement">
         </div>
         <!-- section more info -->
-
         <section class="more-info">
             <div class="detais-quartier">
                 <h2>Détails du Quartier</h2>
@@ -100,7 +114,7 @@
             </div>
         </section>
     </main>
-    
+    <!-- section similar offers -->
     <section class="similar-offer">
         <h2>Offres Similaires</h2>
         <div class="offer-box">
@@ -138,44 +152,57 @@
             </div>
         </div>
     </section>
-
-    <footer>
-        <div class="about">
-            <img src="images/white-logo.png" alt="ImmoView">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing 
-                elit. Ut neque beatae quos, doloribus fugiat 
-                nam debitis, corrupti deleniti ea temporibus 
-                expedita tempora quae! Quo ipsa neque qui culpa 
-                odio saepe?
-            </p>
-            <div class="social-media">
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
-            </div>
+     <!--footer-->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-left-content">
+        <div class="footer-logo">
+          <img src="./assets/imgs/ImmoView-logo-white.png" alt="ImmoView">
         </div>
-        <div class="links">
-            <h3>Liens Rapides</h3>
-            <span><a href="#">Accueil</a></span>
-            <span><a href="#">Catalogue</a></span>
-            <span><a href="#">Temoignage</a></span>
+        <p class="footer-paragraph">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident doloribus dolore distinctio dolor aut
+          quas.
+        </p>
+        <div class="social-icons">
+          <a href="facebook.com">
+            <img src="./assets/imgs/facebook.png" alt="facebook">
+          </a>
+          <a href="instagram.com">
+            <img src="./assets/imgs/instagram.png" alt="facebook">
+          </a>
+          <a href="twiter.com">
+            <img src="./assets/imgs/twitter.png" alt="facebook">
+          </a>
         </div>
-        <div class="newsletter">
-            <h3>S'abonner</h3>
-            <p>Abonnez-vous dès maintenant pour ne rien manquer !</p>
-            <div class="submit-btn">
-                <form id="newsletter" action="">
-                    <label for="email"></label>
-                    <input type="email" id="email" placeholder="Entrez votre Adresse Email" required>
-                    <label for="submit"></label>
-                    <input type="submit" id="submit" form="newsletter">
-                </form>
-            </div>
-        </div>
-    </footer>
-    <div class="copyright">
-        <h4>Copyright©2024 - Reformed Plasma</h4>
+      </div>
+      <div class="footer-links">
+        <h5 class="footer-titles">Lien Rapides</h5>
+        <ul>
+          <li><a href="accueil.html">Accueil</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="temoignage.html">Temoignage</a></li>
+        </ul>
+      </div>
+      <div class="footer-inscription">
+        <h5 class="footer-titles">
+          Inscription
+        </h5>
+        <p class="footer-paragraph">
+            Abonnez-vous dès maintenant pour ne rien manquer !
+        </p>
+        <form action="#" class="inscription-form">
+          <input type="text" placeholder="Entrez votre Adresse Email..">
+          <button class="primary-button inscription-button">
+            S'abonner
+          </button>
+        </form>
+      </div>
     </div>
+    <div class="line"></div>
+    <p class="copyright">
+      Copyright@2024 - Reformed Plasma
+    </p>
+  </footer>
 </body>
 <script src="https://kit.fontawesome.com/8dd174d5fa.js" crossorigin="anonymous"></script>
 </html>
