@@ -198,9 +198,13 @@ li:last-child a {
   width: 100%;
   margin: 0;
 }
+<<<<<<< HEAD:assets/css/temoignage.css
 .motivation p {
   line-height: 1.5px;
 }
+=======
+
+>>>>>>> 3a57cf336143c40e06c85e681892cdcb364f612c:css/temoignage.css
 .temoignage-form {
   width: 100%;
   max-width: 600px;
@@ -346,7 +350,10 @@ footer {
 .social-icons a img {
   width: 30px;
   height: 30px;
+<<<<<<< HEAD:assets/css/temoignage.css
   border-radius: 50%;
+=======
+>>>>>>> 3a57cf336143c40e06c85e681892cdcb364f612c:css/temoignage.css
 }
 
 .footer-titles {
@@ -450,4 +457,9 @@ footer {
     font-size: 2rem;
     margin-bottom: 2rem;
   }
+<<<<<<< HEAD:assets/css/temoignage.css
 }
+=======
+
+  .services-grid {}
+>>>>>>> 3a57cf336143c40e06c85e681892cdcb364f612c:css/temoignage.css
