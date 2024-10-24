@@ -21,6 +21,11 @@ body {
 .padding {
   padding: 50px 40px;
 }
+@media (max-width: 768px) {
+  .padding {
+    padding: 50px 20px;
+  }
+}
 /*section title*/
 .section-title {
   font-size: 1.1rem;
@@ -44,6 +49,20 @@ header {
   height: 100vh;
   width: 100vw;
 }
+
+/*menu icon*/
+.menu-icon {
+  width: 45px;
+  height: 45px;
+  display: none;
+}
+.menu-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+/*navigation bar -----------------------*/
+
 nav {
   display: flex;
   align-items: center;
@@ -61,10 +80,18 @@ nav {
   column-gap: 40px;
   list-style: none;
 }
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
 .nav-menu li a {
   text-decoration: none;
   color: #000;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
 }
 li:last-child a {
@@ -106,7 +133,7 @@ li:last-child a {
   align-items: center;
   text-align: center;
   row-gap: 20px;
-
+  padding: 0 20px;
   position: relative;
   top: 35vh;
 }
@@ -119,6 +146,13 @@ li:last-child a {
   line-height: 4.3rem;
   max-width: 500px;
 }
+@media (max-width: 660px) {
+  .hero-title {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 3.3rem;
+  }
+}
 .hero-paragraph {
   font-size: 1rem;
   color: #fff;
@@ -126,7 +160,11 @@ li:last-child a {
   max-width: 450px;
   margin: 10px auto;
 }
-
+@media (max-width: 465px) {
+  .hero-title {
+    font-size: 2.6rem;
+  }
+}
 /*Mession*/
 
 .mession {
@@ -135,6 +173,11 @@ li:last-child a {
   align-items: center;
   flex-wrap: wrap;
   gap: 50px;
+}
+@media (max-width: 660px) {
+  .mession {
+    flex-direction: column;
+  }
 }
 .mession-content {
   flex: 1;
@@ -193,6 +236,16 @@ li:last-child a {
   line-height: 1.1rem;
 }
 
+@media (max-width: 800px) {
+  .services-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+}
 /*FAQ*/
 
 .faq-paragraph {
@@ -263,6 +316,12 @@ footer {
   flex-wrap: wrap;
   gap: 30px;
 }
+@media (max-width: 864px) {
+  .footer-top {
+    justify-content: start;
+    column-gap: 50px;
+  }
+}
 /* .footer-left-content{
   display: flex;
   flex-direction: column;
@@ -329,6 +388,21 @@ footer {
 }
 .inscription-button {
   color: #fff;
+}
+@media (max-width: 374px) {
+  .inscription-form {
+    width: 100%;
+    padding: 6px 10px;
+  }
+  .inscription-button {
+    padding: 8px 16px;
+  }
+  .inscription-button a {
+    font-size: 0.8rem;
+  }
+  .inscription-form input::placeholder {
+    max-width: 70%;
+  }
 }
 
 .copyright {
