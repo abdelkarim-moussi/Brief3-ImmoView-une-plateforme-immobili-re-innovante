@@ -81,3 +81,11 @@ ImmoView est une plateforme immobilière conçue pour simplifier la recherche et
 ## Installation
 1. Clonez le dépôt :
    git clone https://github.com/votre-utilisateur/immoView.git
+
+
+
+
+![Accuei-screenshot](https://github.com/user-attachments/assets/7ef06fca-0160-4c46-8b1b-93891157ccbf)
+![page-catalogue](https://github.com/user-attachments/assets/28b9ecd4-c659-4799-8c1c-481b3c380e28)
+![FireShot_Capture_007_-_IMMOVIEW_-_Temoignages_-_127 0 0 1](https://github.com/user-attachments/assets/9e53427e-e4b9-492f-a08c-f034d0589cae)
+![Details-Biens_-_Desktop](https://github.com/user-attachments/assets/25635086-9727-4ecd-86a1-cddc07fc3f96)
