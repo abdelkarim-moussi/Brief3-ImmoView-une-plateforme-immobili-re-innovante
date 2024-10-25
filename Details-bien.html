@@ -4,56 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_left" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_left" />
     <link rel="stylesheet" href="./assets/css/details-bien.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <title>Détails du bien</title>
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="page-head">
         <nav>
-            <img src="./assets/imgs/green-logo.png" alt="">
-            <ul>
-                <li><a href="#">Accueil</a></li>
+            <div class="logo">
+                <img src="./assets/imgs/ImmoView-logo.png" alt="ImmoView">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
                 <li><a href="catalogue.html">Catalogue</a></li>
                 <li><a href="temoignage.html">Temoignage</a></li>
-                <li><a href="#">Contact</a></li>
+                <li>
+                    <button type="button" class="primary-button"><a href="#">Contact</a></button>
+                </li>
             </ul>
+            <div class="menu-icon">
+                <img src="./assets//imgs/menu.png" alt="">
+            </div>
+
         </nav>
     </header>
-    <header class="phone-header">
-        <img src="./assets/imgs/green-logo.png" alt="">
-        <i class="fa-solid fa-bars"></i>
-    </header>
-    
-    <div class="dropdown-menu">
-        <div><h3><a href="accueil.html">ACCUEIL</a></h3></div>
-        <div><h3><a href="catalogue.html">CATALOGUE</a></h3></div>
-        <div><h3><a href="temoignage.html">TEMOIGNAGE</a></h3></div>
-        <div><h3><a href="contact.html">CONTACT</a></h3></div>
-    </div>
-    
-    <section class="hero-section">
-    </section>
     <main>
         <h2>Détails du bien</h2>
         <div class="main-contain">
             <section class="info">
                 <h3>APPARTEMENT A VENDRE</h3>
                 <h5>Quartier La libérté, Toulouse</h5>
-                <p>Dans une résidence moderne de haut standing avec 
-                    gardien, salle de fitness et spa, un appartement 
-                    trois pièces de 69,76 m2 composé d'une entrée avec 
-                    placard, d'une cuisine américaine équipée ouverte 
-                    sur un séjour donnant sur une terrasse de 10,28 m2 
-                    exposé sud-sud ouest avec vue parc et montagne, 
-                    d'une suite parentale avec placard et salle de 
-                    bain donnant sur le balcon, d'une deuxième chambre 
-                    donnant sur le balcon d'une salle d'eau, de deux WC 
-                    séparés, d'une cave et d'un parking privatif.Les 
-                    informations sur les risques auxquels ce bien est 
+                <p>Dans une résidence moderne de haut standing avec
+                    gardien, salle de fitness et spa, un appartement
+                    trois pièces de 69,76 m2 composé d'une entrée avec
+                    placard, d'une cuisine américaine équipée ouverte
+                    sur un séjour donnant sur une terrasse de 10,28 m2
+                    exposé sud-sud ouest avec vue parc et montagne,
+                    d'une suite parentale avec placard et salle de
+                    bain donnant sur le balcon, d'une deuxième chambre
+                    donnant sur le balcon d'une salle d'eau, de deux WC
+                    séparés, d'une cave et d'un parking privatif.Les
+                    informations sur les risques auxquels ce bien est
                     exposé sont disponibles sur le site Géorisques
                 </p>
                 <div class="resume">
@@ -71,27 +72,31 @@
                 </div>
             </section>
             <section class="image-section">
-                <img src="./assets/imgs/appartement1.jpg" alt="appartement">
+                <!-- <div class="left-slide"><span class="material-symbols-outlined">chevron_left</span></div> -->
+                <!-- <div class="main-slide"><i></i></div> -->
+                <!-- <div class="right-slide"><span class="material-symbols-outlined">chevron_right</span></div> -->
+                <img src="images/appartement1.jpg" alt="appartement">
             </section>
         </div>
         <div class="other-images">
-            <img src="./assets/imgs/appartement2.jpg" alt="appartement">
-            <img src="./assets/imgs/appartement3.jpg" alt="appartement">
-            <img src="./assets/imgs/appartement4.jpg" alt="appartement">
-            <img src="./assets/imgs/appartement5.jpg" alt="appartement">
+            <img src="images/appartement2.jpg" alt="appartement">
+            <img src="images/appartement3.jpg" alt="appartement">
+            <img src="images/appartement4.jpg" alt="appartement">
+            <img src="images/appartement5.jpg" alt="appartement">
         </div>
         <!-- section more info -->
+
         <section class="more-info">
             <div class="detais-quartier">
                 <h2>Détails du Quartier</h2>
                 <div class="parag">
                     <p>
-                        Situé dans un cadre verdoyant et paisible, cet 
-                        appartement est proche des commerces, écoles et 
-                        transports en commun. Un parc, des sentiers de 
-                        randonnée, ainsi que des cafés et restaurants sont 
-                        accessibles à pied, offrant un cadre de vie pratique 
-                        et agréable. La gare à proximité permet de rejoindre 
+                        Situé dans un cadre verdoyant et paisible, cet
+                        appartement est proche des commerces, écoles et
+                        transports en commun. Un parc, des sentiers de
+                        randonnée, ainsi que des cafés et restaurants sont
+                        accessibles à pied, offrant un cadre de vie pratique
+                        et agréable. La gare à proximité permet de rejoindre
                         rapidement le centre-ville.
                     </p>
                 </div>
@@ -102,14 +107,16 @@
                     <label for="full-name"></label>
                     <input type="text" id="full-name" placeholder="Nom Complet.." required>
                     <label for="Numero-tel"></label>
-                    <input type="tel" id="Numero-tel" placeholder="N° de téléphone.." maxlength="10" minlength="10" required>
+                    <input type="tel" id="Numero-tel" placeholder="N° de téléphone.." maxlength="10" minlength="10"
+                        required>
                     <label for="email"></label>
                     <input type="email" id="email" placeholder="Email.." required>
                     <select name="" id="" required>
                         <option value="Obtenir un Rendez-vous">Obtenir un Rendez-vous</option>
                         <option value="Informations/Photos">Informations/Photos</option>
                         <option value="Plannifier une visite">Plannifier une visite</option>
-                        <option value="Recevoir un Appel de service commercial">Recevoir un Appel de service commercial</option>
+                        <option value="Recevoir un Appel de service commercial">Recevoir un Appel de service commercial
+                        </option>
                     </select>
                 </form>
                 <div class="text-area">
@@ -120,12 +127,12 @@
             </div>
         </section>
     </main>
-    <!-- section similar offers -->
+
     <section class="similar-offer">
         <h2>Offres Similaires</h2>
         <div class="offer-box">
             <div class="offer-card">
-                <img src="./assets/imgs/app1.jpg" alt="appartement">
+                <img src="images/app1.jpg" alt="appartement">
                 <div class="offer-info">
                     <h3>à partir de 500 000 €</h3>
                     <h4>Quartier 2 Mars</h4>
@@ -133,7 +140,7 @@
                 </div>
             </div>
             <div class="offer-card">
-                <img src="./assets/imgs/app2.jpg" alt="appartement">
+                <img src="images/app2.jpg" alt="appartement">
                 <div class="offer-info">
                     <h3>à partir de 600 000 €</h3>
                     <h4>Quartier Saint-Laurant</h4>
@@ -141,7 +148,7 @@
                 </div>
             </div>
             <div class="offer-card">
-                <img src="./assets/imgs/app3.jpg" alt="appartement">
+                <img src="images/app3.jpg" alt="appartement">
                 <div class="offer-info">
                     <h3>à partir de 730 000 €</h3>
                     <h4>Quartier Luis IV</h4>
@@ -149,7 +156,7 @@
                 </div>
             </div>
             <div class="offer-card">
-                <img src="./assets/imgs/app4.jpg" alt="appartement">
+                <img src="images/app4.jpg" alt="appartement">
                 <div class="offer-info">
                     <h3>à partir de 810 000 €</h3>
                     <h4>Quartier des Palmiers</h4>
@@ -158,62 +165,63 @@
             </div>
         </div>
     </section>
-     <!--footer-->
-  <footer>
-    <div class="footer-top">
-      <div class="footer-left-content">
-        <div class="footer-logo">
-          <img src="./assets/imgs/white-logo.png" alt="ImmoView">
+    <!--footer-->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-left-content">
+                <div class="footer-logo">
+                    <img src="./assets/imgs/ImmoView-logo-white.png" alt="ImmoView">
+                </div>
+                <p class="footer-paragraph">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident doloribus dolore distinctio
+                    dolor aut
+                    quas.
+                </p>
+                <div class="social-icons">
+                    <a href="facebook.com">
+                        <img src="./assets/imgs/facebook.png" alt="facebook">
+                    </a>
+                    <a href="instagram.com">
+                        <img src="./assets/imgs/instagram.png" alt="facebook">
+                    </a>
+                    <a href="twiter.com">
+                        <img src="./assets/imgs/twitter.png" alt="facebook">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h5 class="footer-titles">Lien Rapides</h5>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="temoignage.html">Temoignage</a></li>
+                </ul>
+            </div>
+            <div class="footer-inscription">
+                <h5 class="footer-titles">
+                    Inscription
+                </h5>
+                <p class="footer-paragraph">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, fuga?
+                </p>
+                <form action="#" class="inscription-form">
+                    <input type="text" placeholder="Entrer Votre Email...">
+                    <button class="primary-button inscription-button">
+                        S'abonner
+                    </button>
+                </form>
+            </div>
+
         </div>
-        <p class="footer-paragraph">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident doloribus dolore distinctio dolor aut
-          quas.
+        <div class="line"></div>
+        <p class="copyright">
+            Copyright@2024 - Reformed Plasma
         </p>
-        <div class="social-icons">
-          <a href="facebook.com">
-            <img src="./assets/imgs/facebook.png" alt="facebook">
-          </a>
-          <a href="instagram.com">
-            <img src="./assets/imgs/instagram.png" alt="facebook">
-          </a>
-          <a href="twiter.com">
-            <img src="./assets/imgs/twitter.png" alt="facebook">
-          </a>
-        </div>
-      </div>
-      <div class="footer-links">
-        <h5 class="footer-titles">Lien Rapides</h5>
-        <ul>
-          <li><a href="accueil.html">Accueil</a></li>
-          <li><a href="catalogue.html">Catalogue</a></li>
-          <li><a href="temoignage.html">Temoignage</a></li>
-        </ul>
-      </div>
-      <div class="footer-inscription">
-        <h5 class="footer-titles">
-          Inscription
-        </h5>
-        <p class="footer-paragraph">
-            Abonnez-vous dès maintenant pour ne rien manquer !
-        </p>
-        <form action="#" class="inscription-form">
-          <input type="text" placeholder="Entrez votre Adresse Email..">
-          <button class="primary-button inscription-button">
-            S'abonner
-          </button>
-        </form>
-      </div>
-    </div>
-    <div class="line"></div>
-    <p class="copyright">
-      Copyright@2024 - Reformed Plasma
-    </p>
-  </footer>
+
+    </footer>
+
+    <!--end footer-->
 </body>
-<!-- kIT fONT AWESOME -->
 <script src="https://kit.fontawesome.com/8dd174d5fa.js" crossorigin="anonymous"></script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!-- JS -->
-<script src="script.js"></script>
+
 </html>
