@@ -76,6 +76,9 @@ h3{
     background-repeat: no-repeat;
     box-shadow: 0px 0px 10px #000;
 }
+.dropdown-menu{
+    display:none;
+}
 
 main{
     margin: auto 7.5vw;
@@ -574,7 +577,6 @@ main .more-info{
     width: 100%;
     margin: auto;
 }
-
 main .more-info .detais-quartier{
     width: 40%;
     padding: 0 2%;
@@ -582,13 +584,11 @@ main .more-info .detais-quartier{
     box-shadow: 0px 0px 5px #000;
     margin-right: 2%;
 }
-
 main .more-info .detais-quartier p{
     text-align: justify;
     font-size: 1.2rem;
     line-height: 4vh;
 }
-
 main .more-info .message-section{
     width: 55%;
     padding: 0 2%;
@@ -597,11 +597,9 @@ main .more-info .message-section{
     margin-left: 2%;
 }
 /*offres similaires*/
-
 .similar-offer{
     width: 90vw;
 }
-
 .similar-offer .offer-box{
     width: 100%;
     display: grid;
@@ -762,7 +760,7 @@ main .more-info .message-section .text-area input[type="submit"]{
   overflow-x: scroll;
 }
 .similar-offer .offer-box::-webkit-scrollbar{
-  /* display: none; */
+  display: none;
 }
 .similar-offer .offer-box .offer-card img{
   width: 75vw;
@@ -810,30 +808,40 @@ footer .footer-top .footer-left-content{
   text-align: center;
   padding: 0;
 }
-
-
-
-
-
-
-
-
-
 .dropdown-menu{
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #17372B;
-  width: 100;
+  width: 100vw;
   color: #fff;
   height: 400px;
   display: none;
+  transition: 0.8S;
+}
+.dropdown-menu .dropdown-menu-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+}
+.dropdown-menu .dropdown-menu-header a{
+    color: white;
+}
+.dropdown-menu .dropdown-menu-header a i{
+    font-size: 2rem;
+    transition: 0.8S;
+}
+.dropdown-menu .white-logo{
+    height:90%;
+    width: 20%;
 }
 .dropdown-menu div{
   display: flex;
   width: 100%;
   height: 100%;
-  /* border-bottom: 2px solid  #1AAD76; */
   box-shadow: inset 0px 5px 5px #0b1a14;
 }
 .dropdown-menu div h3{
@@ -848,5 +856,4 @@ footer .footer-top .footer-left-content{
   text-decoration: none;
   color: #fff;
 }
-
 }

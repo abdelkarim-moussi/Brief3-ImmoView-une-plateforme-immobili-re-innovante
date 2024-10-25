@@ -21,18 +21,21 @@
             </ul>
         </nav>
     </header>
-    <header class="phone-header">
+    <header class="phone-header" id="phone-header">
         <img src="./assets/imgs/green-logo.png" alt="">
-        <i class="fa-solid fa-bars"></i>
+        <a href="#" onclick="afficherMenu(); return false;"><i class="fa-solid fa-bars"></i></a>
     </header>
     
-    <div class="dropdown-menu">
+    <div class="dropdown-menu" id="burger-menu">
+        <div class="dropdown-menu-header">
+            <img class="white-logo" src="./assets/imgs/white-logo.png" alt="">
+            <a href="#" onclick="masquerMenu(); return false;"><i class="fa-solid fa-x"></i></a>
+        </div>
         <div><h3><a href="accueil.html">ACCUEIL</a></h3></div>
         <div><h3><a href="catalogue.html">CATALOGUE</a></h3></div>
         <div><h3><a href="temoignage.html">TEMOIGNAGE</a></h3></div>
         <div><h3><a href="contact.html">CONTACT</a></h3></div>
     </div>
-    
     <section class="hero-section">
     </section>
     <main>
@@ -213,5 +216,14 @@
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <!-- JS -->
-<script src="script.js"></script>
+<script>
+    function afficherMenu() {
+      document.getElementById("burger-menu").style.display = "flex";
+    document.getElementById("phone-header").style.display = "none";
+    } 
+    function masquerMenu() {
+        document.getElementById("phone-header").style.display = "flex";
+      document.getElementById("burger-menu").style.display = "none";
+    } 
+  </script>
 </html>
