@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innoview</title>
-    <link rel="stylesheet" href="./assets/css/catalogue.css">
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="catalogue.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/accueil.css">
     <!-- CDN :font-awesome librery -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
 <body>
+    
     <header class="catalogue-header">
         <nav>
             <div class="logo">
@@ -32,161 +34,187 @@
 
         </nav>
 
-
+        <div data-aos="fade-up">
         <section class="catalogue-hero_content">*
             <h1>ImmoView <br> Collection</h1>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit Laborum,<br> provident Fugiat eveniet commodi
                 corporis fuga </p>
         </section>
+        </div>
     </header>
-    <div class="chois">
-        <!-- <div class="button"> -->
-        <button class="btn">localisation <img src="./assets/imgs/arow.png" alt=""></button>
-        <button class="btn">prix <img src="./assets/imgs/arow.png" alt=""></button>
-        <button class="btn">type de bien <img src="./assets/imgs/arow.png" alt=""></button>
-        <!-- </div> -->
-    </div>
+    <div data-aos="fade-up">
+       
+    
+       
+          
+            <!-- this is ssection catalogue picturs -->
+        <section class="catalogue-contaiiner">
+            <!-- list -->
+            <div class="chois">
+                <select name="localisation" id="localisation">
+                  <option value="">Localisation</option>
+                  <option value="safi">Safi</option>
+                  <option value="marrakech">Marrakech</option>
+                </select>
+                
+                <select name="prix" id="prix">
+                  <option value="">Prix</option>
+                  <option value="100">100,00§</option>
+                  <option value="200">200,00§</option>
+                </select>
+                
+                <select name="details" id="details">
+                  <option value="">Plus de détails</option>
+                  <option value="1">Option 1</option>
+                  <option value="2">Option 2</option>
+                </select>
+              </div>
+              
 
-
-
-    <!-- this is ssection catalogue picturs -->
-    <section class="catalogue">
-        <div class="catalogue-card" style="margin-inline: auto;">
-            <div class="catalogue-card-image">
-                <img src="./assets/imgs/pexels-tobiasbjorkli-2119713.jpg" alt="">
-                <!-- icons -->
-                <i class="fa-regular fa-heart"></i>
+           <div class="catalogue">
+            <div class="catalogue-card">
+                <div class="catalogue-card-image">
+                    <img src="./assets/imgs/pexels-tobiasbjorkli-2119713.jpg" alt="">
+                    <!-- icons -->
+                        <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="card-catalogue_content">
+                    <h5 class="card-catalogue_title">
+                        Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </h5>
+                    <p class="price">
+                        100.00$
+                    </p>
+                    <button class="primary-button">
+                        <a href="#">Voir detail</a>
+                    </button>
+                </div>
             </div>
-            <div class="card-catalogue_content">
-                <h5 class="card-catalogue_title">
-                    Sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua
-                </h5>
-                <p class="price">
-                    100.00$
-                </p>
-                <button class="primary-button">
-                    <a href="Details-bien.html">Voir detail</a>
-                </button>
+            <div class="catalogue-card">
+                <div class="catalogue-card-image">
+                    <img src="./assets/imgs/pexels-pixabay-209296.jpg" alt="">
+                    <!-- iconns -->
+                    <i class="fa-regular fa-heart"></i>
+    
+                </div>
+                <div class="card-catalogue_content">
+                    <h5 class="card-catalogue_title">
+                        Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </h5>
+                    <p class="price">
+                        100.00$
+                    </p>
+                    <button class="primary-button">
+                        <a href="#">Voir detail</a>
+                    </button>
+                </div>
             </div>
+            
+            <div class="catalogue-card">
+                <div class="catalogue-card-image">
+                    <img src="./assets/imgs/omg4.jpg" alt="">
+                    <!-- icons -->
+                    <i class="fa-regular fa-heart"></i>
+    
+                </div>
+                <div class="card-catalogue_content">
+                    <h5 class="card-catalogue_title">
+                        Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </h5>
+                    <p class="price">
+                        100.00$
+                    </p>
+                    <button class="primary-button">
+                        <a href="#">Voir detail</a>
+                    </button>
+                </div>
+            </div>
+            <div class="catalogue-card">
+                <div class="catalogue-card-image">
+                    <img src="./assets/imgs/omg4.jpg" alt="">
+                    <!-- icons -->
+                    <i class="fa-regular fa-heart"></i>
+    
+                </div>
+                <div class="card-catalogue_content">
+                    <h5 class="card-catalogue_title">
+                        Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </h5>
+                    <p class="price">
+                        100.00$
+                    </p>
+                    <button class="primary-button">
+                        <a href="#">Voir detail</a>
+                    </button>
+                </div>
+    
+            </div>
+            <div class="catalogue-card">
+                <div class="catalogue-card-image">
+                    <img src="./assets/imgs/img5.jpg" alt="">
+                    <!-- icons -->
+                    <i class="fa-regular fa-heart"></i>
+    
+                </div>
+                <div class="card-catalogue_content">
+                    <h5 class="card-catalogue_title">
+                        Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </h5>
+                    <p class="price">
+                        100.00$
+                    </p>
+                    <button class="primary-button">
+                        <a href="#">Voir detail</a>
+                    </button>
+                </div>
+    
+            </div>
+           
+            <div class="catalogue-card">
+                <div class="catalogue-card-image">
+                    <img src="./assets/imgs/img6.jpg" alt="">
+                    <!-- icons -->
+                    <i class="fa-regular fa-heart"></i>
+    
+                </div>
+                <div class="card-catalogue_content">
+                    <h5 class="card-catalogue_title">
+                        Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua
+                    </h5>
+                    <p class="price">
+                        100.00$
+                    </p>
+                    <button class="primary-button">
+                        <a href="#">Voir detail</a>
+                    </button>
+                </div>
+    
+            </div>
+           </div>
+            <!-- circle to moving -->
+        <div class="container11">
+            <div class="cercle"></div>
+            <div class="cercle_middle"></div>
+            <div class="cercle"></div>
         </div>
-        <div class="catalogue-card">
-            <div class="catalogue-card-image">
-                <img src="./assets/imgs/pexels-pixabay-209296.jpg" alt="">
-                <!-- iconns -->
-                <i class="fa-regular fa-heart"></i>
-
-            </div>
-            <div class="card-catalogue_content">
-                <h5 class="card-catalogue_title">
-                    Sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua
-                </h5>
-                <p class="price">
-                    100.00$
-                </p>
-                <button class="primary-button">
-                    <a href="Details-bien.html">Voir detail</a>
-                </button>
-            </div>
-        </div>
-        <div class="catalogue-card">
-            <div class="catalogue-card-image">
-                <img src="./assets/imgs/omg4.jpg" alt="">
-                <!-- icons -->
-                <i class="fa-regular fa-heart"></i>
-
-            </div>
-            <div class="card-catalogue_content">
-                <h5 class="card-catalogue_title">
-                    Sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua
-                </h5>
-                <p class="price">
-                    100.00$
-                </p>
-                <button class="primary-button">
-                    <a href="Details-bien.html">Voir detail</a>
-                </button>
-            </div>
-        </div>
-        <div class="catalogue-card">
-            <div class="catalogue-card-image">
-                <img src="./assets/imgs/img5.jpg" alt="">
-                <!-- icons -->
-                <i class="fa-regular fa-heart"></i>
-
-            </div>
-            <div class="card-catalogue_content">
-                <h5 class="card-catalogue_title">
-                    Sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua
-                </h5>
-                <p class="price">
-                    100.00$
-                </p>
-                <button class="primary-button">
-                    <a href="Details-bien.html">Voir detail</a>
-                </button>
-            </div>
-
-        </div>
-        <div class="catalogue-card">
-            <div class="catalogue-card-image">
-                <img src="./assets/imgs/img6.jpg" alt="">
-                <!-- icons -->
-                <i class="fa-regular fa-heart"></i>
-
-            </div>
-            <div class="card-catalogue_content">
-                <h5 class="card-catalogue_title">
-                    Sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua
-                </h5>
-                <p class="price">
-                    100.00$
-                </p>
-                <button class="primary-button">
-                    <a href="Details-bien.html">Voir detail</a>
-                </button>
-            </div>
-
-        </div>
-
-        <div class="catalogue-card">
-            <div class="catalogue-card-image">
-                <img src="./assets/imgs/img6.jpg" alt="">
-                <!-- icons -->
-                <i class="fa-regular fa-heart"></i>
-
-            </div>
-            <div class="card-catalogue_content">
-                <h5 class="card-catalogue_title">
-                    Sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua
-                </h5>
-                <p class="price">
-                    100.00$
-                </p>
-                <button class="primary-button">
-                    <a href="Details-bien.html">Voir detail</a>
-                </button>
-            </div>
-
-        </div>
-
-
-
-
-    </section>
-    <!-- this is ssection catalogue picturs -->
-
-    <!-- circle to moving -->
-    <div class="container11">
-        <div class="cercle"></div>
-        <div class="cercle_middle"></div>
-        <div class="cercle"></div>
-    </div>
+            
+                
+    
+    
+        </section>
+           <!-- this is ssection catalogue picturs -->
+       
+   
+    
+       
+      </div>
+     
 
     <!--footer-->
     <footer>
@@ -243,9 +271,13 @@
 
     </footer>
 
-    <!--end footer-->
+  <!--end footer-->
+ 
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
