@@ -450,24 +450,6 @@ footer {
 /* les modifications pour le style à la taille Tablette */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* section header */
-  .main-header nav ul :last-child a {
-    padding: 1vh 3vw;
-  }
-  .main-header nav ul li {
-    margin-left: 3vw;
-  }
-  .main-header nav ul li a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 1.2rem;
-  }
-  .main-header nav ul li a:hover {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    color: #1aad76;
-  }
   /* section hero */
   .hero-section {
     width: 100vw;
@@ -478,6 +460,7 @@ footer {
     background-repeat: no-repeat;
     box-shadow: 0px 0px 10px #000;
   }
+
   /* section détails du bien */
   main {
     margin: auto 3vw;
