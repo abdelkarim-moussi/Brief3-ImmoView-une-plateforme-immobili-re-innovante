@@ -3,6 +3,19 @@
   src: url("/fonts/Poppins/Poppins-Black.ttf");
 }
 
+/* Animation pour le chargement de la page */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -34,6 +47,29 @@ body {
 }
 
 /*-------------------------------*/
+/* Section Bienvenue */
+.beinvenu {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;  
+  padding: 10rem 1rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.beinvenu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--green-1);
+}
+
+.beinvenu p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  width: 500px;
+  color: white;
+}
 
 /*section title*/
 .section-title {
@@ -84,6 +120,7 @@ body {
 }
 
 .photo_info img {
+  border: 4px solid #17372b;
   border-radius: 50%;
   width: 80px;
 }
@@ -94,11 +131,23 @@ body {
 }
 
 .temoignage-info {
-
   align-items: start;
-  margin: 5%
+  margin: 5%;
 }
 
+.lien-vers-dettail {
+  text-align: end;
+  
+}
+
+.direction {
+  padding-top: 2em;
+}
+
+.direction a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
 /* Formulaire */
 .ajout-temoignage {
   max-width: 1200px;
@@ -150,16 +199,6 @@ textarea {
 .temoignage-form button {
   color: #fff;
 }
-
-/* button[type="submit"] {
-  color: white;
-  background-color: var(--primary-color);
-  font-weight: bold;
-  width: 100%;
-  max-width: 100%;
-  height: 5vh;
-  border-radius: 50px;
-} */
 
 /* Nos services */
 .services-section {
@@ -227,6 +266,7 @@ textarea {
   font-size: 1rem;
   line-height: 1.5;
 }
+
 
 /* Media Queries */
 @media (max-width: 768px) {
