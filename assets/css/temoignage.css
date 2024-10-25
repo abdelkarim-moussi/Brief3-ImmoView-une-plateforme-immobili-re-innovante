@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Poppins-Black.ttf");
+}
+
+/* Animation pour le chargement de la page */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #17372b;
+  --secondary-color: #1aad76;
+  --green-1: #48674f;
+  --green-2: #adbc9d;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.padding {
+  padding: 50px 40px;
+}
+
+/*pages hero section but Accueil*/
+.page-head {
+  height: 70vh;
+  background: linear-gradient(var(--green-2), rgba(72, 103, 79, 0.5)),
+    url("../imgs/bg2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*-------------------------------*/
+/* Section Bienvenue */
+.beinvenu {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 10rem 1rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.beinvenu h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--green-1);
+}
+
+.beinvenu p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  width: 500px;
+  color: white;
+}
+
+/*section title*/
+.section-title {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/*end section title*/
+
+/* Grille de témoignages */
+.temoignages {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.temoignages > h3 {
+  margin-bottom: 40px;
+}
+
+.temoignages-grid {
+  display: grid;
+  column-gap: 10rem;
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.temoignage-card {
+  background-color: rgba(173, 188, 157, 0.2);
+  border-radius: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 1.5rem;
+}
+
+.photo_info {
+  display: flex;
+  align-items: start;
+}
+
+.photo_info img {
+  border: 4px solid #17372b;
+  border-radius: 50%;
+  width: 80px;
+}
+
+.temoignage-card:hover {
+  background-color: rgba(173, 188, 157, 0.9);
+  transform: scale(1.2);
+}
+
+.temoignage-info {
+  align-items: start;
+  margin: 5%;
+}
+
+.lien-vers-dettail {
+  text-align: end;
+}
+
+.direction {
+  padding-top: 2em;
+}
+
+.direction a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+/* Formulaire */
+.ajout-temoignage {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+.motivation {
+  flex: 1;
+  margin: 0;
+  max-width: 500px;
+}
+
+.motivation > h2 {
+  margin-bottom: 20px;
+}
+
+.motivation > p {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.temoignage-form {
+  width: 450px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+#nom,
+#email,
+textarea {
+  width: 100%;
+  border: 0.5px solid rgba(0, 0, 0, 20%);
+  border-radius: 40px;
+  padding: 13px 20px;
+  outline: none;
+}
+
+textarea {
+  height: 130px;
+  resize: vertical;
+}
+
+.temoignage-form button {
+  color: #fff;
+}
+
+/* Nos services */
+.services-section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-title {
+  text-align: start;
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.services-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-card:hover {
+  transform: scale(1);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.services-card:hover .service-image {
+  transform: scale(1.1);
+}
+
+.service-content {
+  padding: 1.5rem;
+}
+
+.service-content h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Ajustement grille */
+  .temoignages-grid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .temoignage-card:hover {
+    transform: scale(1);
+  }
+
+  /* Ajustement formulaire */
+  .ajout-temoignage {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  .motivation,
+  .formulaire {
+    text-align: center;
+  }
+
+  .temoignage-form {
+    padding: 1rem;
+  }
+
+  .services-section {
+    padding: 2rem 1rem;
+  }
+
+  .services-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+}
